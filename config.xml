@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE module PUBLIC
+          "-//Checkstyle//DTD Checkstyle Configuration 1.3//EN"
+          "https://checkstyle.org/dtds/configuration_1_3.dtd">
+<module name = "Checker">
+	<module name="TreeWalker">
+		<module name="MethodLength">
+			<property name="max" value="50"/>
+		</module>
+		<module name="com.sathish.checkstyle.checks.MethodLimitCheck">
+			<property name="max" value="2"/>
+		</module>
+		<module name="com.sathish.checkstyle.checks.InnerClassCheck"/>
+		<module name="com.sathish.checkstyle.checks.MethodNameCheck"/>
+		<module name="com.sathish.checkstyle.checks.HungarianNotationCheck"/>
+		<module name="com.sathish.checkstyle.checks.IllegalExceptionThrowsCheck">
+			<property name="severity" value="error" />
+			<property name="exceptionSearchList" value="Exception,java.lang.Exception" />
+		</module>
+	</module>
+	<module name="com.sathish.checkstyle.checks.LimitImplementationFiles">
+			<property name="max" value="1"/>
+	</module>
+</module>

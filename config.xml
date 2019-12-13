@@ -17,6 +17,7 @@
 			<property name="severity" value="error" />
 			<property name="exceptionSearchList" value="Exception,java.lang.Exception" />
 		</module>
+		<module name="com.sathish.checkstyle.checks.ListMethodParameters"/>
 	</module>
 	<module name="com.sathish.checkstyle.checks.LimitImplementationFiles">
 			<property name="max" value="1"/>
